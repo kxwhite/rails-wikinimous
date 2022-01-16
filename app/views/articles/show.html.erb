@@ -1,0 +1,22 @@
+<div class="article-container">
+  <h1>
+    <%= @article.title %>
+
+  </h1>
+
+</div>
+  <p class="para-text"><%= @article.content %></p>
+
+    <small>
+      <%= link_to articles_path(@article) do %>
+        <i class="fa fa-arrow-left"></i>
+      <% end %>
+
+      <%= link_to edit_article_path(@article) do %>
+        <i class="fa fa-edit"></i>
+      <% end %>
+
+      <%= link_to article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } do %>
+        <i class="fa fa-trash-o"></i>
+      <% end %>
+    </small>

@@ -1,0 +1,67 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.index-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+h2 a {
+  color: steelblue;
+  &:hover {
+    color: #37668b;
+  }
+}
+
+// Show (Individual Articles)
+
+/* div.article-container h1 small {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+} */
+
+div {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  margin-top: 50px;
+}
+
+small {
+  margin-left: 100px;
+}
+
+h1 {
+  margin-left: 100px;
+}
+
+i {
+  margin: 2px;
+}
+
+p.para-text {
+  margin-left: 100px;
+}
+
+form {
+  display: block;
+  margin: 50px 100px 10px 100px;
+}
+
+.fa {
+  color: steelblue;
+  font-size: 24px;
+  &:hover {
+    color: #37668b;
+  }
+}
+
+p a {
+  color: steelblue;
+  &:hover {
+    color: #37668b;
+  }
+}

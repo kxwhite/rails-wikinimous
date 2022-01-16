@@ -6,11 +6,23 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%# <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand nav" href="/articles">Wikinimous</a>
+    <li class="nav-item nav">
+      <a class="nav-link" href="/articles/new">New Article</a>
+    </li>
+  </nav>
+
+
     <%= yield %>
   </body>
 </html>

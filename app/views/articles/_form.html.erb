@@ -1,0 +1,12 @@
+<%= simple_form_for @article do |a| %>
+  <%= a.input :title  %>
+  <%= a.input :content %>
+  <%= a.submit %>
+<% end %>
+
+
+<small>
+  <%= link_to articles_path(@article) do %>
+    <i class="fa fa-arrow-left"></i>
+  <% end %>
+</small>
